@@ -29,7 +29,7 @@ class Persona {
         return $this->ciudad;
     }
     public function MostrarInformacion(){
-        echo "El nombre es: ".$this->nom."<br>"."El apellido es: ".$this->apell."<br>"."Su edad es: ".$this->edad."<br>"."Viven en: ".$this->ciudad;
+        echo "El nombre es: ".$this->nom."<br>"."El apellido es: ".$this->apell."<br>"."Su edad es: ".$this->edad."<br>"."Vive en: ".$this->ciudad;
     }
 
 }
