@@ -1,9 +1,9 @@
 <?php
 class Persona {
-    private string $nom;
-    private string $apell;
-    private int $edad;
-    private string $ciudad;
+    public string $nom;
+    public string $apell;
+    public int $edad;
+    public string $ciudad;
     public function setNom(string $nom) {
         return $this->nom = $nom;
     }
