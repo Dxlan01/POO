@@ -11,11 +11,11 @@ class Estudiante {
         $this->documento = $documento;
     }
 
-    public function consultarDocumento(): string {
+    public function consultarDocumento(){
         return $this->documento;
     }
 
-    private function notaValida(float $nota): bool {
+    private function notaValida(float $nota) {
         return $nota >= 0.0 && $nota <= 5.0;
     }
 
@@ -25,11 +25,11 @@ class Estudiante {
             $this->nota2 = $nota2;
             $this->nota3 = $nota3;
         } else {
-            echo "Error: las notas deben estar entre 0.0 y 5.0<br>";
+            echo "Error: las notas deben estar entre 0.0 y 5.0\n";
         }
     }
 
-    public function calcularPromedio(): float {
+    public function calcularPromedio(){
         return ($this->nota1 + $this->nota2 + $this->nota3) / 3;
     }
 
@@ -38,13 +38,13 @@ class Estudiante {
     }
 
     public function mostrarInformacion() {
-        echo "Documento: " . $this->documento . "<br>"
-            . "Nombre: " . $this->nombre . "<br>"
-            . "Programa: " . $this->programa . "<br>"
-            . "Nota 1: " . $this->nota1 . "<br>"
-            . "Nota 2: " . $this->nota2 . "<br>"
-            . "Nota 3: " . $this->nota3 . "<br>"
-            . "Promedio: " . number_format($this->calcularPromedio(), 2) . "<br>"
-            . "Estado: " . $this->determinarEstado() . "<br><br>";
+        echo "Documento: " . $this->documento . "\n"
+            . "Nombre: " . $this->nombre . "\n"
+            . "Programa: " . $this->programa . "\n"
+            . "Nota 1: " . $this->nota1 . "\n"
+            . "Nota 2: " . $this->nota2 . "\n"
+            . "Nota 3: " . $this->nota3 . "\n"
+            . "Promedio: " . number_format($this->calcularPromedio(), 2) . "\n"
+            . "Estado: " . $this->determinarEstado() . "\n \n";
     }
 }

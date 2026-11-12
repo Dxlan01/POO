@@ -1,9 +1,9 @@
 <?php
-require_once "6.php";
+require_once "4.4.php";
 
-$est1 = new Estudiante();
-$est2 = new Estudiante();
-$est3 = new Estudiante();
+$est1 = new estudiante();
+$est2 = new estudiante();
+$est3 = new estudiante();
 
 $est1->asignarDocumento("1005123456");
 $est1->nombre = "Dylan Calero";

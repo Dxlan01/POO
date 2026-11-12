@@ -2,7 +2,7 @@
 class CuentaBancaria {
     public string $titular;
     public int $numeroCuenta;
-    private int $saldo = 0;
+    public int $saldo = 0;
 
     function depositar(int $valor) {
         if ($valor > 0) {
@@ -27,8 +27,8 @@ class CuentaBancaria {
     }
 
     function mostrarInformacion() {
-        echo "Titular: {$this->titular}<br>";
-        echo "Número de cuenta: {$this->numeroCuenta}<br>";
+        echo "Titular: {$this->titular}\n";
+        echo "Número de cuenta: {$this->numeroCuenta}\n";
         echo "Saldo: {$this->saldo}";
     }
 }
