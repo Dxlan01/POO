@@ -1,9 +1,9 @@
-    2|<?php
+<?php
 class Persona {
-    private string $nom;
-    private string $apell;
-    private int $edad;
-    private string $ciudad;
+    public string $nom;
+    public string $apell;
+    public int $edad;
+    public string $ciudad;
     public function setNom(string $nom) {
         return $this->nom = $nom;
     }
@@ -29,7 +29,7 @@ class Persona {
         return $this->ciudad;
     }
     public function MostrarInformacion(){
-        echo "El nombre es: ".$this->nom."<br>"."El apellido es: ".$this->apell."<br>"."Su edad es: ".$this->edad."<br>"."Vive en: ".$this->ciudad;
+        echo "El nombre es: ".$this->nom."\n"."El apellido es: ".$this->apell."\n"."Su edad es: ".$this->edad."\n"."Vive en: ".$this->ciudad . "\n"."\n";
     }
 
 }
